@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 
 export const AddCategory = ({ setCategories }) => {
 
@@ -21,7 +21,9 @@ export const AddCategory = ({ setCategories }) => {
 
     return (
         <form onSubmit= { handleSubmit }>
+            {/* <p>{ inputValue }</p> */}
             <input
+                type = 'Text'
                 placeholder = 'Buscar'
                 value = { inputValue }
                 onChange = { handleInputValue }
